@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Tracker</title>
+</head>
+<body>
+    <h1 class="title">Tracker</h1>
+    <section class="tab">
+        <div class="tabs tab-1">
+            <h1>In</h1>
+            <div class="items">
+                <input 
+                    type="text" 
+                    placeholder="MM/DD/YYYY"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    class="inDate"
+                >
+                <input class="inAmount" type="text" name="amount" placeholder="amount"/>
+                <input class="inDescription" type="text" name="description" placeholder="description"/>
+                <button class="btn-1">IN</button>
+            </div>
+        </div>
+
+        <div class="tabs tab-2">
+            <h1>Out</h1>
+            <div class="items">
+                <input 
+                    type="text" 
+                    placeholder="MM/DD/YYYY"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    class="outDate"
+                >
+                <input class="outAmount" type="text" name="amount" placeholder="amount"/>
+                <input class="outDescription" type="text" name="description" placeholder="description"/>
+                <button class="btn-2">OUT</button>
+            </div>
+        </div>
+
+        <div class="tabs tab-3">
+            <h1>Summary</h1>
+            <div class="items">
+                <label for="Totalin">Total In</label>
+                <input class="TotalIn" placeholder="N/A" type="text" name="Totalin" disabled/>
+                
+                <label for="Totalout">Total Out</label>
+                <input class="TotalOut" placeholder="N/A" type="text" name="Totalout" disabled/>
+                
+                <label for="profit">profit/Loss</label>
+                <input class="Profit" placeholder="N/A" type="text" name="profit" disabled/>
+                <button class="btn-3">SAVE</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
